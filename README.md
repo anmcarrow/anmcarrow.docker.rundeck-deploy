@@ -1,5 +1,5 @@
 This repo contains minimal docker-compose file for
-deploy dockerized [Ansible AWX](https://github.com/ansible/awx) service.
+deploy dockerized [Rundeck](https://github.com/rundeck) service.
 
 ---
 Author: [anmcarrow](mailto:mb@mcrrw.me) 
