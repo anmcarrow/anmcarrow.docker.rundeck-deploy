@@ -1,6 +1,5 @@
 This repo contains minimal docker-compose file for
-deploy dockerized MariaDB and 
-[Ansible Semaphore](https://github.com/ansible-semaphore/) service.
+deploy dockerized [Polemarch](https://gitlab.com/vstconsulting/polemarch) service.
 
 ---
 Author: [anmcarrow](mailto:mb@mcrrw.me) 
