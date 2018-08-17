@@ -1,0 +1,25 @@
+version: '3'
+services:
+  mariadb:
+    container_name: mariadb
+    image: "mariadb:latest"
+#    volumes: "/var/lib/mysql:/var/lib/mysql"
+    environment:
+      MYSQL_ROOT_PASSWORD: coolpassword
+
+  semaphore:
+    container_name: semaphore
+    image: "ansiblesemaphore/semaphore"
+    links:
+      - mariadb
+    environment:
+      SEMAPHORE_DB_HOST: mariadb
+      SEMAPHORE_DB_USER: root
+      SEMAPHORE_DB_PASS: coolpassword
+      SEMAPHORE_ADMIN: admin
+      SEMAPHORE_ADMIN_PASSWORD: admin
+#    volumes: "/etc/semaphore/config.json:/etc/semaphore/config.json"
+    ports:
+      - "3000:3000"
+#    hostname: semaphore.example.net
+
