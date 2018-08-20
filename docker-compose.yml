@@ -7,7 +7,7 @@ services:
     ports:
       - "4440:4440"
     environment: 
-      - RDECK_ADMIN_PASS: admin
+      - RDECK_ADMIN_PASS: "admin"
 #    volumes:
       - "/var/lib/rundeck:/data"
 #      - "/var/lib/rundeck:/home/rundeck/server/data"
