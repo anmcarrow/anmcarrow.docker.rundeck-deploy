@@ -3,10 +3,13 @@ services:
 
   rundeck:
     image: "rundeck/rundeck:SNAPSHOT"
+    container_name: rundeck
     ports:
       - "4440:4440"
+#    environment:
+#      - RUNDECK_GRAILS_URL=http://rundeck.example.com:4440
 #    volumes:
 #      - "/var/lib/rundeck:/home/rundeck/server/data"
       - "/var/lib/rundeck:/home/rundeck/server/data"
-#    hostname: rundeck.exemple.com
+#    hostname: rundeck.example.com
 
