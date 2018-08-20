@@ -2,10 +2,11 @@ version: '3'
 services:
 
   rundeck:
-    image: "rundeck/rundeck:latest"
+    image: "rundeck/rundeck:SNAPSHOT"
     ports:
       - "4440:4440"
 #    volumes:
 #      - "/var/lib/rundeck:/home/rundeck/server/data"
+      - "/var/lib/rundeck:/home/rundeck/server/data"
 #    hostname: rundeck.exemple.com
 
